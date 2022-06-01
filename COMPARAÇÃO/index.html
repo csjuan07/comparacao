@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação</title>
+
+    Primeiro número <input id="numero1" type="number"> <br/>
+    Segundo número <input id="numero2" type="number"> <br/>
+    <button onclick="comparacao()">Comparar</button>
+
+    <script type="text/javascript">
+
+        function comparacao(){
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+
+            var comparacao = (numero1 - numero2);
+
+            if (comparacao > 0){
+                alert ("O " + numero1 + " é maior!");
+            }
+            else if (comparacao == 0){
+                alert ("Os números são iguais!");
+            }
+            else
+                alert ("O " + numero2 + " é maior!");
+            
+
+        }
+
+    </script>
+
+</head>
+
+</html>
